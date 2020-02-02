@@ -22,6 +22,7 @@
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
 		/datum/language/terrum,
+		/datum/language/gutter
 	))
 
 /obj/item/organ/tongue/Initialize(mapload)
