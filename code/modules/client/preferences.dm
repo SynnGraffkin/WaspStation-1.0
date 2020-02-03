@@ -108,6 +108,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/exp = list()
 	var/list/menuoptions
 
+	//Loadout stuff
+	var/list/equipped_gear = list()
+	var/gear_tab = "General"
+
 	var/action_buttons_screen_locs = list()
 
 /datum/preferences/New(client/C)
@@ -153,8 +157,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	dat += "<a href='?_src_=prefs;preference=tab;tab=0' [current_tab == 0 ? "class='linkOn'" : ""]>Character Settings</a>"
 	dat += "<a href='?_src_=prefs;preference=tab;tab=1' [current_tab == 1 ? "class='linkOn'" : ""]>Game Preferences</a>"
-	dat += "<a href='?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>OOC Preferences</a>"
-	dat += "<a href='?_src_=prefs;preference=tab;tab=3' [current_tab == 3 ? "class='linkOn'" : ""]>Custom Keybindings</a>"
+	dat += "<a href='?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>Loadout</a>"
+	dat += "<a href='?_src_=prefs;preference=tab;tab=2' [current_tab == 3 ? "class='linkOn'" : ""]>OOC Preferences</a>"
+	dat += "<a href='?_src_=prefs;preference=tab;tab=3' [current_tab == 4 ? "class='linkOn'" : ""]>Custom Keybindings</a>"
 
 	if(!path)
 		dat += "<div class='notice'>Please create an account to save your preferences</div>"
@@ -638,8 +643,59 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<b>Be [capitalize(i)]:</b> <a href='?_src_=prefs;preference=be_special;be_special_type=[i]'>[(i in be_special) ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<br>"
 			dat += "<b>Midround Antagonist:</b> <a href='?_src_=prefs;preference=allow_midround_antag'>[(toggles & MIDROUND_ANTAG) ? "Enabled" : "Disabled"]</a><br>"
-			dat += "</td></tr></table>"
-		if(2) //OOC Preferences
+
+			dat += "</td></tr><tr><td> </td></tr>" // i hate myself for this
+			dat += "<tr><td colspan='2' width='100%'><center><a style='font-size: 18px;' href='?_src_=prefs;preference=keybindings_menu'>Customize Keybinds</a></center></td></tr>"
+			dat += "</table>"
+
+		if(2) //Loadout
+			var/list/type_blacklist = list()
+			if(equipped_gear && equipped_gear.len)
+				for(var/i = 1, i <= equipped_gear.len, i++)
+					var/datum/gear/G = GLOB.gear_datums[equipped_gear[i]]
+					if(G)
+						if(G.subtype_path in type_blacklist)
+							continue
+						type_blacklist += G.subtype_path
+					else
+						equipped_gear.Cut(i,i+1)
+			var/firstcat = 1
+			for(var/category in GLOB.loadout_categories)
+				if(firstcat)
+					firstcat = 0
+				else
+					dat += " |"
+				if(category == gear_tab)
+					dat += " <span class='linkOff'>[category]</span> "
+				else
+					dat += " <a href='?_src_=prefs;preference=gear;select_category=[category]'>[category]</a> "
+			dat += "</b></center></td></tr>"
+
+			var/datum/loadout_category/LC = GLOB.loadout_categories[gear_tab]
+			dat += "<tr><td colspan=4><hr></td></tr>"
+			dat += "<tr><td colspan=4><b><center>[LC.category]</center></b></td></tr>"
+			dat += "<tr><td colspan=4><hr></td></tr>"
+
+			dat += "<tr><td colspan=4><hr></td></tr>"
+			dat += "<tr><td><b>Name</b></td>"
+			dat += "<td><b>Restricted Jobs</b></td>"
+			dat += "<td><b>Description</b></td></tr>"
+			dat += "<tr><td colspan=4><hr></td></tr>"
+			for(var/gear_name in LC.gear)
+				var/datum/gear/G = LC.gear[gear_name]
+				var/ticked = (G.display_name in equipped_gear)
+
+				dat += "<tr style='vertical-align:top;'><td width=15%>[G.display_name]\n"
+				dat += "<a style='white-space:normal;' [ticked ? "class='linkOn' " : ""]href='?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>Equip</a></td>"
+				if(G.allowed_roles)
+					dat += "<font size=2>"
+					for(var/role in G.allowed_roles)
+						dat += role + " "
+					dat += "</font>"
+				dat += "</td><td><font size=2><i>[G.description]</i></font></td></tr>"
+			dat += "</table>"
+
+		if(3) //OOC Preferences
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>OOC Settings</h2>"
 			dat += "<b>Window Flashing:</b> <a href='?_src_=prefs;preference=winflash'>[(windowflashing) ? "Enabled":"Disabled"]</a><br>"
@@ -707,7 +763,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "</td>"
 			dat += "</tr></table>"
-		if(3) // Custom keybindings
+		if(4) // Custom keybindings
 			// Create an inverted list of keybindings -> key
 			var/list/user_binds = list()
 			for (var/key in key_bindings)
@@ -1160,6 +1216,33 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			else
 				SetQuirks(user)
 		return TRUE
+
+	if(href_list["preference"] == "gear")
+		if(href_list["toggle_gear"])
+			var/datum/gear/TG = GLOB.gear_datums[href_list["toggle_gear"]]
+			if(TG.display_name in equipped_gear)
+				equipped_gear -= TG.display_name
+			else
+				var/list/type_blacklist = list()
+				for(var/gear_name in equipped_gear)
+					var/datum/gear/G = GLOB.gear_datums[gear_name]
+					if(istype(G))
+						if(G.subtype_path in type_blacklist)
+							continue
+						type_blacklist += G.subtype_path
+				if(!(TG.subtype_path in type_blacklist))
+					equipped_gear += TG.display_name
+				else
+					to_chat(user, "<span class='warning'>Can't equip [TG.display_name]. It conflicts with an already-equipped item.</span>")
+			save_preferences()
+
+		else if(href_list["select_category"])
+			gear_tab = href_list["select_category"]
+		else if(href_list["clear_loadout"])
+			equipped_gear.Cut()
+
+		ShowChoices(user)
+		return
 
 	switch(href_list["task"])
 		if("random")

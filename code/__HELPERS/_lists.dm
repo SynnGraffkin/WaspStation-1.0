@@ -355,8 +355,28 @@
 /proc/sortNames(list/L, order=1)
 	return sortTim(L.Copy(), order >= 0 ? /proc/cmp_name_asc : /proc/cmp_name_dsc)
 
+//Mergesort: any value in a list, preserves key=value structure
+/proc/sortAssoc(var/list/L)
+	if(L.len < 2)
+		return L
+	var/middle = L.len / 2 + 1 // Copy is first,second-1
+	return mergeAssoc(sortAssoc(L.Copy(0,middle)), sortAssoc(L.Copy(middle))) //second parameter null = to end of list
 
-//Converts a bitfield to a list of numbers (or words if a wordlist is provided)
+/proc/mergeAssoc(var/list/L, var/list/R)
+	var/Li=1
+	var/Ri=1
+	var/list/result = new()
+	while(Li <= L.len && Ri <= R.len)
+		if(sorttext(L[Li], R[Ri]) < 1)
+			result += R&R[Ri++]
+		else
+			result += L&L[Li++]
+
+	if(Li <= L.len)
+		return (result + L.Copy(Li, 0))
+	return (result + R.Copy(Ri, 0))
+
+/// Converts a bitfield to a list of numbers (or words if a wordlist is provided)
 /proc/bitfield2list(bitfield = 0, list/wordlist)
 	var/list/r = list()
 	if(islist(wordlist))
@@ -391,12 +411,19 @@
 	return FALSE
 
 
-//Move a single element from position fromIndex within a list, to position toIndex
-//All elements in the range [1,toIndex) before the move will be before the pivot afterwards
-//All elements in the range [toIndex, L.len+1) before the move will be after the pivot afterwards
-//In other words, it's as if the range [fromIndex,toIndex) have been rotated using a <<< operation common to other languages.
-//fromIndex and toIndex must be in the range [1,L.len+1]
-//This will preserve associations ~Carnie
+/**
+ Move a single element from position fromIndex within a list, to position toIndex
+
+ All elements in the range [1,toIndex) before the move will be before the pivot afterwards
+
+ All elements in the range [toIndex, L.len+1) before the move will be after the pivot afterwards
+
+ In other words, it's as if the range [fromIndex,toIndex) have been rotated using a <<< operation common to other languages.
+
+ fromIndex and toIndex must be in the range [1,L.len+1]
+
+ This will preserve associations ~Carnie
+*/
 /proc/moveElement(list/L, fromIndex, toIndex)
 	if(fromIndex == toIndex || fromIndex+1 == toIndex)	//no need to move
 		return
