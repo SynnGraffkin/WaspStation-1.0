@@ -253,7 +253,7 @@ SUBSYSTEM_DEF(air)
 		if(T.excited_group)
 			T.excited_group.garbage_collect()
 
-/datum/controller/subsystem/air/proc/add_to_active(turf/open/T, blockchanges = 1)
+/datum/controller/subsystem/air/proc/add_to_active(turf/open/T)
 	if(istype(T) && T.air)
 		#ifdef VISUALIZE_ACTIVE_TURFS
 		T.add_atom_colour("#00ff00", TEMPORARY_COLOUR_PRIORITY)
@@ -262,7 +262,7 @@ SUBSYSTEM_DEF(air)
 		active_turfs |= T
 		if(currentpart == SSAIR_ACTIVETURFS)
 			currentrun |= T
-		if(blockchanges && T.excited_group)
+		if(T.excited_group)
 			T.excited_group.garbage_collect()
 	else if(T.flags_1 & INITIALIZED_1)
 		for(var/turf/S in T.atmos_adjacent_turfs)

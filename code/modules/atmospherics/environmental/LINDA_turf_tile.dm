@@ -296,6 +296,7 @@
 		for(var/t in E.turf_list)
 			var/turf/open/T = t
 			T.excited_group = src
+			self_breakdown()
 			turf_list += T
 		reset_cooldowns()
 	else
@@ -303,6 +304,7 @@
 		for(var/t in turf_list)
 			var/turf/open/T = t
 			T.excited_group = E
+			self_breakdown()
 			E.turf_list += T
 		E.reset_cooldowns()
 
