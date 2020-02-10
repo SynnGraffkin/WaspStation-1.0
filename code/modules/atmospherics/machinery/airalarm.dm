@@ -700,6 +700,9 @@
 	for(var/obj/machinery/airalarm/AA in A)
 		if (!(AA.stat & (NOPOWER|BROKEN)) && !AA.shorted)
 			new_area_danger_level = max(new_area_danger_level,AA.danger_level)
+			if(new_area_danger_level > 1)
+				A.firealert(AA)
+				playsound(loc, 'goon/sound/machinery/FireAlarm.ogg', 75)
 	if(A.atmosalert(new_area_danger_level,src)) //if area was in normal state or if area was in alert state
 		post_alert(new_area_danger_level)
 
