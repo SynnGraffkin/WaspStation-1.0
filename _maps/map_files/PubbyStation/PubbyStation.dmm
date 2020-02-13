@@ -1919,6 +1919,10 @@
 /area/security/execution/transfer)
 "afX" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/execution/transfer)
 "afZ" = (
@@ -4125,6 +4129,10 @@
 	name = "Space shutters"
 	},
 /obj/structure/cable,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/crew_quarters/heads/hos)
 "ala" = (
@@ -5994,6 +6002,9 @@
 /area/maintenance/fore)
 "apR" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "apS" = (
@@ -6298,6 +6309,10 @@
 	name = "bridge external shutters"
 	},
 /obj/structure/cable,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/bridge)
 "aqL" = (
@@ -6602,6 +6617,10 @@
 	c_tag = "Bridge MiniSat Access";
 	dir = 4
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/bridge)
 "arC" = (
@@ -6616,6 +6635,10 @@
 /obj/structure/transit_tube/station/reverse/flipped{
 	dir = 1
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/bridge)
 "arD" = (
@@ -6625,6 +6648,10 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/transit_tube/horizontal,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/bridge)
 "arE" = (
@@ -6638,6 +6665,14 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/transit_tube/curved/flipped{
 	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/bridge)
@@ -6994,6 +7029,10 @@
 "asj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/crew_quarters/dorms)
 "asm" = (
@@ -8170,6 +8209,10 @@
 	id = "Dorm3Shutters";
 	name = "Dorm Shutters"
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/crew_quarters/dorms)
 "ave" = (
@@ -9154,6 +9197,10 @@
 /area/bridge)
 "axh" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/bridge)
 "axi" = (
@@ -9163,6 +9210,9 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
+	},
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/hallway/primary/central)
@@ -9511,6 +9561,10 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Dorm2Shutters";
 	name = "Dorm Shutters"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/crew_quarters/dorms)
@@ -10811,6 +10865,10 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "Dorm1Shutters";
 	name = "Dorm Shutters"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/crew_quarters/dorms)
@@ -28416,6 +28474,9 @@
 /area/science/explab)
 "buz" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/science/explab)
 "buB" = (
@@ -31018,6 +31079,10 @@
 "bAJ" = (
 /obj/structure/transit_tube/horizontal,
 /obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "bAK" = (
@@ -32444,6 +32509,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/science)
+"bDJ" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "bDK" = (
 /obj/structure/table,
 /obj/item/folder,
@@ -35945,6 +36021,10 @@
 	dir = 4
 	},
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bLa" = (
@@ -36933,6 +37013,10 @@
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bNn" = (
@@ -37374,6 +37458,10 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 10
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bOs" = (
@@ -37693,6 +37781,10 @@
 	dir = 4
 	},
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bPg" = (
@@ -37978,6 +38070,10 @@
 "bPY" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bPZ" = (
@@ -38348,6 +38444,10 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/engine/atmos)
@@ -38947,6 +39047,10 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/engine/atmos)
@@ -39950,6 +40054,10 @@
 /obj/machinery/atmospherics/pipe/simple/purple/visible{
 	dir = 4
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bUA" = (
@@ -40310,6 +40418,10 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bVm" = (
@@ -40642,6 +40754,10 @@
 "bWc" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bWd" = (
@@ -41025,6 +41141,10 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bWS" = (
@@ -41498,12 +41618,18 @@
 "bYp" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible,
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "bYq" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 5
+	},
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/engine/atmos)
@@ -43236,6 +43362,9 @@
 "cec" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/general/visible,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating/airless,
 /area/maintenance/disposal/incinerator)
 "cee" = (
@@ -46495,6 +46624,10 @@
 /area/space/nearstation)
 "crb" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating/airless,
 /area/chapel/office)
 "crd" = (
@@ -48123,6 +48256,10 @@
 "cxJ" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/library/lounge)
 "cxK" = (
@@ -48164,6 +48301,10 @@
 "cxM" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/library/lounge)
 "cxX" = (
@@ -48859,6 +49000,10 @@
 /area/maintenance/department/engine)
 "cBM" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/chapel/office)
 "cBS" = (
@@ -49125,6 +49270,14 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/engine/engineering)
+"cZw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "daY" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -49135,6 +49288,15 @@
 /obj/item/clothing/ears/earmuffs,
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
+"dcH" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/warning/vacuum/external,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "dcL" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating,
@@ -49185,6 +49347,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/engine,
 /area/engine/engineering)
+"dhW" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "dir" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 5
@@ -49312,6 +49482,13 @@
 	},
 /turf/open/floor/plasteel/white/corner,
 /area/hallway/secondary/exit/departure_lounge)
+"dwh" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/quartermaster/miningdock)
 "dxc" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -49617,6 +49794,10 @@
 /area/maintenance/department/science)
 "evB" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "ezF" = (
@@ -49728,6 +49909,9 @@
 "ePB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "ePU" = (
@@ -49757,6 +49941,14 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/science/explab)
+"eQX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "eQZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/disposalpipe/segment,
@@ -49803,6 +49995,22 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/engine,
 /area/science/explab)
+"eXA" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/chapel/main/monastery)
+"eXK" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/chapel/office)
 "eYr" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -49949,6 +50157,14 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engine/lobby)
+"fjV" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
 "fkH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -50001,6 +50217,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs)
+"fpx" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/primary/central)
 "fpT" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -50148,6 +50372,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /turf/open/floor/engine,
 /area/maintenance/disposal/incinerator)
+"fEt" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
 "fFv" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -50242,6 +50474,18 @@
 /obj/structure/bookcase/random/religion,
 /turf/open/floor/plasteel/dark,
 /area/library/lounge)
+"fXP" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/quartermaster/miningdock)
 "gam" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Service Door";
@@ -50481,6 +50725,14 @@
 	heat_capacity = 1e+006
 	},
 /area/hallway/secondary/exit/departure_lounge)
+"grG" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/crew_quarters/fitness/recreation)
 "gue" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -50715,6 +50967,14 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/engine/engineering)
+"gNc" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/primary/central)
 "gNv" = (
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = 32
@@ -50736,6 +50996,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"gOM" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/warning/vacuum/external,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "gOS" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -50784,6 +51056,15 @@
 /obj/structure/grille,
 /turf/open/space/basic,
 /area/space/nearstation)
+"gYV" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/security/prison)
 "ham" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -50892,6 +51173,13 @@
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel,
 /area/engine/lobby)
+"hst" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/science/xenobiology)
 "hsW" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -51037,6 +51325,9 @@
 /area/quartermaster/office)
 "hMa" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating/airless,
 /area/maintenance/disposal/incinerator)
 "hOx" = (
@@ -51171,6 +51462,14 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/disposal/incinerator)
+"hVw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/crew_quarters/dorms)
 "hVx" = (
 /obj/structure/chair{
 	dir = 4
@@ -51316,6 +51615,14 @@
 /obj/machinery/processor/slime,
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
+"img" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/library)
 "imB" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/engine_waste{
 	dir = 1
@@ -51431,6 +51738,15 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /turf/open/space/basic,
 /area/space/nearstation)
+"izZ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/primary/central)
 "iAx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -51453,6 +51769,16 @@
 	},
 /turf/open/floor/plating/airless,
 /area/tcommsat/computer)
+"iCd" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "iCe" = (
 /obj/machinery/atmospherics/components/trinary/mixer{
 	dir = 4;
@@ -51514,6 +51840,14 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/quartermaster/sorting)
+"iLd" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/primary/central)
 "iLl" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -51617,6 +51951,10 @@
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
@@ -51808,6 +52146,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
+"jyJ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/science/mixing)
 "jza" = (
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -52073,6 +52418,17 @@
 /obj/machinery/meter,
 /turf/open/floor/engine,
 /area/engine/engineering)
+"kcA" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
 "kfh" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -52459,6 +52815,19 @@
 /obj/machinery/holopad/secure,
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/hos)
+"kOk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/warning/vacuum/external,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "kPi" = (
 /obj/structure/table,
 /obj/machinery/microwave,
@@ -52523,6 +52892,14 @@
 	},
 /turf/open/floor/plating,
 /area/storage/emergency/port)
+"kTd" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/security/main)
 "kUj" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -52593,6 +52970,13 @@
 	},
 /turf/open/floor/plating,
 /area/security/execution/transfer)
+"leN" = (
+/obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/engine/engineering)
 "lhu" = (
 /obj/machinery/shieldgen,
 /obj/machinery/light{
@@ -52850,6 +53234,17 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+"lRp" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/science/mixing)
 "lTC" = (
 /obj/item/shard,
 /obj/effect/turf_decal/stripes/line{
@@ -52971,6 +53366,16 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+"mgd" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/primary/central)
 "mgC" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
@@ -53029,6 +53434,15 @@
 /obj/item/pen/blue,
 /turf/open/floor/wood,
 /area/lawoffice)
+"mpL" = (
+/obj/structure/sign/warning/vacuum/external,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "mql" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 9
@@ -53671,6 +54085,13 @@
 	},
 /turf/open/floor/engine,
 /area/science/explab)
+"nJJ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/primary/central)
 "nLl" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -53872,6 +54293,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
+"oev" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/warning/vacuum/external,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
 "oex" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -54286,6 +54716,14 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
+"oSQ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/library)
 "oTl" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -54389,6 +54827,13 @@
 	},
 /turf/open/floor/engine,
 /area/science/xenobiology)
+"pcU" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/engine/atmos)
 "pdq" = (
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
@@ -54480,6 +54925,14 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"pzm" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/quartermaster/miningdock)
 "pAb" = (
 /obj/machinery/power/emitter,
 /obj/machinery/light{
@@ -54809,6 +55262,14 @@
 /obj/machinery/iv_drip,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
+"qpD" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "qqa" = (
 /obj/machinery/atmospherics/pipe/manifold/general/hidden{
 	dir = 4
@@ -54973,6 +55434,18 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
+"qJK" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "qMi" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/general/visible,
@@ -55421,6 +55894,10 @@
 	dir = 4
 	},
 /obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "rMV" = (
@@ -55474,6 +55951,13 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+"rXZ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/chapel/office)
 "rYC" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -55695,6 +56179,13 @@
 /obj/item/clothing/mask/gas/plaguedoctor,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
+"sBk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "sBA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -55809,6 +56300,17 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/engine,
 /area/engine/engineering)
+"sWx" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/quartermaster/miningdock)
 "sWM" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -56504,6 +57006,10 @@
 "uqJ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
 /turf/open/floor/plating,
 /area/security/execution/transfer)
 "urG" = (
@@ -56694,6 +57200,14 @@
 "uRk" = (
 /turf/closed/wall/r_wall,
 /area/engine/supermatter)
+"uSk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/security/main)
 "uTI" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/effect/turf_decal/stripes/line{
@@ -56766,6 +57280,17 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/science/xenobiology)
+"vab" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "vay" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -57190,6 +57715,14 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+"weX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
 "wfc" = (
 /obj/structure/ore_box,
 /turf/open/floor/plating,
@@ -57216,6 +57749,14 @@
 /mob/living/simple_animal/hostile/retaliate/poison/snake,
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+"wfY" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/warning/vacuum/external,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "whH" = (
 /obj/structure/chair/wood,
 /obj/item/radio/intercom{
@@ -57455,6 +57996,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/disposal/incinerator)
+"wMx" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/security/main)
 "wMF" = (
 /obj/effect/spawner/lootdrop/three_course_meal,
 /obj/effect/spawner/lootdrop/three_course_meal,
@@ -57764,6 +58313,18 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
+"xrm" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8;
+	name = "Atmospherics Shutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
 "xsB" = (
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -58011,6 +58572,14 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
+"ycg" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4;
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/quartermaster/storage)
 "ycr" = (
 /obj/structure/target_stake,
 /obj/item/target/syndicate,
@@ -58066,6 +58635,13 @@
 /obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
+"yky" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	name = "Atmospherics Shutter"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/exit/departure_lounge)
 "ylb" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -69053,7 +69629,7 @@ aaa
 aaa
 bZY
 bZY
-cBM
+eXK
 bZY
 bZY
 aaa
@@ -69067,9 +69643,9 @@ aaa
 aaa
 cfN
 cfN
-fIT
+eXA
 cfH
-fIT
+eXA
 cfN
 aaa
 aaa
@@ -69570,7 +70146,7 @@ csd
 csB
 csd
 csd
-cBM
+rXZ
 aaa
 aaa
 cfN
@@ -74225,16 +74801,16 @@ aaa
 aaa
 aaa
 cjp
-cyU
+oSQ
 cjp
-cyU
+oSQ
 cjp
 cjp
-cyU
+oSQ
 cjp
-cyU
+oSQ
 cjp
-cyU
+oSQ
 aht
 aht
 aht
@@ -74750,7 +75326,7 @@ ckH
 ckH
 cjp
 cjp
-cyU
+oSQ
 aht
 aaa
 aaa
@@ -75151,19 +75727,19 @@ aiu
 aaa
 aaa
 aaa
-aHA
+xrm
 aKy
-xee
+oev
 aKy
-aHA
+kcA
 aaa
 aaa
 aaa
-aHA
+xrm
 aKy
-xee
+oev
 qIC
-aHA
+kcA
 aaa
 aaa
 aaa
@@ -75266,7 +75842,7 @@ cAs
 ckH
 cAH
 cjp
-cyU
+oSQ
 aaa
 aaa
 aaa
@@ -75408,19 +75984,19 @@ ait
 aaa
 abN
 aaa
-aHA
+fEt
 aKz
 aHA
 aKz
-aHA
+yky
 abI
 aht
 abI
-aHA
+fEt
 aKz
 aHA
 aKz
-aHA
+yky
 aaa
 aaa
 aaa
@@ -75665,19 +76241,19 @@ ait
 aht
 aht
 aht
-aHA
+fEt
 dqG
 aHA
 aKz
-aHA
+yky
 abI
 aaa
 abI
-aHA
+fEt
 aKz
 aHA
 wKa
-aHA
+yky
 aaa
 aaa
 aaa
@@ -75922,19 +76498,19 @@ ait
 aaa
 aaa
 aaa
-aHA
+fEt
 wqu
 aHA
 wqu
-aHA
+yky
 abI
 aht
 abI
-aHA
+fEt
 wqu
 aHA
 wqu
-aHA
+yky
 aaa
 aaa
 aaa
@@ -76184,18 +76760,18 @@ aKB
 nYn
 aKB
 xee
-aHA
-aHA
-aHA
+weX
+weX
+weX
 xee
 aKB
 nYn
 fTY
 xee
 aYG
-aZx
-aZx
-aZx
+dhW
+dhW
+vab
 aaa
 aaa
 aaa
@@ -76206,10 +76782,10 @@ aaa
 aaa
 aaa
 aaa
-aZx
-aZx
-aZx
-aZx
+qJK
+dhW
+dhW
+vab
 aaa
 aaa
 aaa
@@ -76452,7 +77028,7 @@ aWK
 aYG
 aZy
 baJ
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -76463,10 +77039,10 @@ aaa
 aaa
 aaa
 aaa
-aZx
+qpD
 baJ
 bon
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -76551,7 +77127,7 @@ cAs
 ckH
 cAM
 cjp
-cyU
+img
 aaa
 aaa
 cfN
@@ -76710,20 +77286,20 @@ aYG
 aZy
 baK
 jzz
-aZx
-jzz
+dhW
+gOM
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-jzz
-aZx
+kOk
+dhW
 jzz
 baK
 bon
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -76980,7 +77556,7 @@ bcX
 bdV
 baK
 bon
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -77063,7 +77639,7 @@ ckH
 ckH
 cjp
 cjp
-cyU
+img
 aht
 aaa
 aaa
@@ -77225,19 +77801,19 @@ aZz
 baK
 aZx
 aZx
-aZx
+sBk
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-aZx
+qpD
 aZx
 aZx
 baK
 bon
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -77482,19 +78058,19 @@ aZA
 baK
 bbR
 bcY
-aZx
+sBk
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-aZx
+qpD
 bkQ
 bbR
 baK
 bon
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -77566,16 +78142,16 @@ aaa
 aaa
 aht
 cjp
-cyU
+img
 cjp
-cyU
+img
 cjp
 cjp
-cyU
+img
 cjp
-cyU
+img
 cjp
-cyU
+img
 aht
 aht
 aht
@@ -77739,19 +78315,19 @@ ovM
 baL
 baK
 bcZ
-aZx
+sBk
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-aZx
+qpD
 bkR
 baK
 baL
 bon
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -77996,19 +78572,19 @@ aZA
 baK
 bbS
 bda
-aZx
+sBk
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-aZx
+qpD
 bkS
 bbS
 baK
 boo
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -78190,7 +78766,7 @@ aaa
 aaa
 adR
 aaa
-aen
+gYV
 aep
 aeD
 aeU
@@ -78253,19 +78829,19 @@ aZA
 baM
 aZx
 aZx
-aZx
+sBk
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-aZx
+qpD
 aZx
 aZx
 bno
 bon
-aZx
+sBk
 aaa
 aaa
 aaa
@@ -78522,7 +79098,7 @@ bcX
 bdV
 bnp
 bon
-aZx
+sBk
 aaa
 aaa
 btK
@@ -78704,7 +79280,7 @@ aaa
 aaa
 adR
 aaa
-aen
+gYV
 aer
 aeF
 aeV
@@ -78767,23 +79343,23 @@ aZA
 baN
 jzz
 aZx
-jzz
+wfY
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-jzz
+dcH
 aZx
 jzz
 bnp
 bon
 aZx
-aZx
-bsl
+dhW
+mpL
 btL
-aZx
+vab
 aaa
 aaa
 aaa
@@ -79042,7 +79618,7 @@ aZx
 bcX
 aZx
 aYG
-aZx
+dhW
 aYG
 bAJ
 bBX
@@ -79218,7 +79794,7 @@ aaa
 aaa
 adR
 aaa
-aen
+gYV
 aet
 aet
 aet
@@ -79283,10 +79859,10 @@ baK
 baK
 aYG
 aYG
-aZx
-aZx
-aZx
-aZx
+dhW
+dhW
+dhW
+dhW
 aYG
 aYG
 baK
@@ -81797,8 +82373,8 @@ aaa
 aby
 abI
 agP
-agQ
-agQ
+wMx
+wMx
 agP
 ahL
 ahL
@@ -82310,7 +82886,7 @@ aaa
 aaa
 aby
 aaa
-agQ
+kTd
 ahd
 ahq
 ahq
@@ -82567,7 +83143,7 @@ aaa
 aaa
 aby
 aaa
-agQ
+kTd
 ahd
 ahq
 cnT
@@ -82824,7 +83400,7 @@ aaa
 afJ
 aby
 aaa
-agQ
+kTd
 ahd
 ahq
 ahq
@@ -83338,7 +83914,7 @@ aaa
 aaa
 aby
 aaa
-agQ
+kTd
 ahd
 ahq
 ahq
@@ -83595,7 +84171,7 @@ aaa
 aaa
 aby
 aaa
-agQ
+kTd
 cnP
 ahq
 ahq
@@ -83852,7 +84428,7 @@ aaa
 aaa
 aby
 aaa
-agQ
+kTd
 cnQ
 ahq
 cnV
@@ -84367,9 +84943,9 @@ aaa
 aby
 abI
 agP
-agQ
-agQ
-agQ
+uSk
+uSk
+uSk
 agP
 agP
 agP
@@ -91419,7 +91995,7 @@ cfY
 tJX
 kbV
 gEI
-evB
+leN
 cdm
 lbC
 nfj
@@ -92098,7 +92674,7 @@ arS
 asV
 aua
 auW
-awd
+gNc
 axi
 aaa
 aaa
@@ -92613,7 +93189,7 @@ asX
 auc
 auY
 awf
-axk
+mgd
 aaa
 abI
 aAH
@@ -93127,9 +93703,9 @@ asZ
 aue
 apT
 awh
-axk
+mgd
 abI
-awd
+iLd
 aAI
 aBH
 aCW
@@ -93385,7 +93961,7 @@ apT
 apT
 awi
 axk
-awd
+gNc
 awd
 aAJ
 aBI
@@ -93460,7 +94036,7 @@ bVg
 bVW
 bWL
 bXu
-bLW
+pcU
 abI
 bMi
 caA
@@ -93717,7 +94293,7 @@ bMf
 bVX
 bWM
 bXv
-bWc
+eQX
 bZe
 bZL
 caB
@@ -93899,7 +94475,7 @@ aug
 cBU
 awk
 axn
-axn
+izZ
 axn
 aAL
 aAL
@@ -93974,7 +94550,7 @@ bMf
 bOk
 bWL
 bXw
-bLW
+pcU
 abI
 bJP
 bJP
@@ -94155,9 +94731,9 @@ atc
 auh
 avb
 awl
-awd
+nJJ
 abI
-awd
+iLd
 aAM
 aBK
 aDa
@@ -94412,16 +94988,16 @@ atd
 aui
 avc
 awm
-awd
+nJJ
 abI
 axi
 aAN
-awd
-awd
+fpx
+fpx
 aAN
 aAN
-awd
-awd
+fpx
+fpx
 aAN
 aIg
 aJf
@@ -94488,7 +95064,7 @@ bMf
 bOk
 bWL
 bXx
-bLW
+pcU
 abI
 bMi
 caD
@@ -94668,7 +95244,7 @@ cBU
 cBU
 cBU
 cBU
-awd
+fpx
 axi
 aaa
 aaa
@@ -94679,7 +95255,7 @@ aaa
 aaa
 aaa
 aaa
-awd
+iLd
 jYe
 aBJ
 aJI
@@ -94745,7 +95321,7 @@ bVh
 bVY
 bWM
 bXy
-bWc
+eQX
 bZe
 bZL
 caE
@@ -94936,7 +95512,7 @@ aaa
 aaa
 aaa
 aaa
-awd
+iLd
 jYe
 aBJ
 aJH
@@ -95259,7 +95835,7 @@ bKX
 bVZ
 bWO
 bXA
-bQO
+bDJ
 bZe
 bZM
 caF
@@ -95516,7 +96092,7 @@ bKX
 bWa
 bMf
 bXB
-bNm
+iCd
 abI
 bMi
 caG
@@ -95773,7 +96349,7 @@ bVi
 bMe
 bWP
 bXy
-bQO
+bDJ
 bZe
 bZN
 caH
@@ -97043,7 +97619,7 @@ bHv
 bFd
 bHw
 bKZ
-bLW
+cZw
 bNm
 bOr
 bPf
@@ -97491,7 +98067,7 @@ aaa
 aaa
 aaa
 aaa
-ash
+hVw
 ash
 ash
 avk
@@ -99841,9 +100417,9 @@ aaa
 aaa
 aaa
 aaa
-bdI
+pzm
 bfJ
-bdI
+dwh
 aaa
 aEj
 pKd
@@ -100089,7 +100665,7 @@ aaa
 aLg
 aTr
 sQt
-aPd
+ycg
 sQt
 aXz
 aLg
@@ -100098,9 +100674,9 @@ aaa
 aaa
 aaa
 aaa
-bdI
+fXP
 oPy
-bdI
+sWx
 aaa
 aEj
 aEj
@@ -101412,7 +101988,7 @@ khk
 bIN
 dAF
 bCV
-bCV
+jyJ
 bNq
 bOu
 aht
@@ -101926,7 +102502,7 @@ bHD
 fBz
 bCV
 bCV
-bCV
+lRp
 ahi
 aht
 aht
@@ -102379,10 +102955,10 @@ aiS
 aiS
 atn
 atn
-avm
-avm
-avm
-avm
+grG
+grG
+grG
+grG
 atn
 atn
 aEj
@@ -108075,7 +108651,7 @@ aaa
 aaa
 aaa
 aaa
-bnd
+fjV
 kRK
 cPy
 dir
@@ -108083,7 +108659,7 @@ mTS
 ufa
 oNE
 oep
-bnd
+hst
 mlr
 sEB
 jEX
@@ -108332,7 +108908,7 @@ aaa
 aaa
 aaa
 aaa
-bnd
+fjV
 qcD
 xxw
 lhA
@@ -108340,7 +108916,7 @@ lFh
 ufa
 taA
 qcH
-bnd
+hst
 nNN
 bwm
 hSM
@@ -108589,7 +109165,7 @@ aTC
 aaa
 aby
 aaa
-bnd
+fjV
 qYq
 sNz
 nqV
@@ -108597,7 +109173,7 @@ oSL
 hUJ
 riW
 jtf
-bnd
+hst
 aht
 ahi
 ahi
@@ -108846,7 +109422,7 @@ bbP
 abI
 aby
 aaa
-bnd
+fjV
 lGS
 nIm
 oEW
@@ -108854,7 +109430,7 @@ iuM
 wXu
 cOp
 lGS
-bnd
+hst
 aaa
 aaa
 aaa
