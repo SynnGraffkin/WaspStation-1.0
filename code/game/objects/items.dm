@@ -486,9 +486,9 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 //Overlays for the worn overlay so you can overlay while you overlay
 //eg: ammo counters, primed grenade flashing, etc.
 //"icon_file" is used automatically for inhands etc. to make sure it gets the right inhand file
-/obj/item/proc/worn_overlays(isinhands = FALSE, icon_file, used_state)
+/obj/item/proc/worn_overlays(isinhands = FALSE, icon_file, used_state, style_flags = NONE)           // Waspstation Edit - Polychromic Fix
 	. = list()
-	SEND_SIGNAL(src, COMSIG_ITEM_WORN_OVERLAYS, isinhands, icon_file, used_state, .)
+	SEND_SIGNAL(src, COMSIG_ITEM_WORN_OVERLAYS, isinhands, icon_file, used_state, style_flags, .)    // Waspstation Edit - Polychromic Fix
 //Wasp End
 
 ///sometimes we only want to grant the item's action if it's equipped in a specific slot.
